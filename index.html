@@ -15,6 +15,7 @@
   </head>
   <body>
     <main>
+      <h1 class="visually-hidden">Tip Calculator</h1>
       <svg
         class="logo"
         xmlns="http://www.w3.org/2000/svg"
@@ -28,12 +29,13 @@
       </svg>
       <form autocomplete="off">
         <section class="data-input">
+          <h2 class="visually-hidden">Data Input</h2>
           <fieldset>
             <div class="data-input__section">
-              <legend>
+              <header>
                 <span>Bill</span>
                 <span class="error"></span>
-              </legend>
+              </header>
               <input
                 class="data-input__input data-input__input--dollar"
                 type="text"
@@ -47,10 +49,10 @@
           </fieldset>
           <fieldset>
             <div class="data-input__section data-input__section--grid">
-              <legend>
+              <header>
                 <span>Select Tip %</span>
                 <span class="error"></span>
-              </legend>
+              </header>
               <label class="data-input__label">
                 <span class="data-input__label-text">5%</span>
                 <input
@@ -108,10 +110,10 @@
           </fieldset>
           <fieldset>
             <div class="data-input__section">
-              <legend>
+              <header>
                 <span>Number of People</span>
                 <span class="error"></span>
-              </legend>
+              </header>
               <input
                 class="data-input__input data-input__input--person"
                 type="text"
@@ -125,6 +127,7 @@
           </fieldset>
         </section>
         <section class="data-results">
+          <h2 class="visually-hidden">Calculation Results</h2>
           <div class="data-results__container">
             <div class="data-results__paragraph">
               <div class="data-results__desc">

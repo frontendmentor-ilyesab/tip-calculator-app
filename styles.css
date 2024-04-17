@@ -59,6 +59,17 @@ h6 {
   overflow-wrap: break-word;
 }
 
+/* Generic Classes */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
 /* CSS Custom Properties */
 :root {
     /* Primary Colors */
@@ -127,7 +138,7 @@ fieldset {
     gap: 0.3rem;
 }
 
-.data-input__section legend {
+.data-input__section header {
     display: flex;
     flex-direction: column;
 }
@@ -137,7 +148,7 @@ fieldset {
     gap: 1rem;
 }
 
-.data-input__section--grid legend {
+.data-input__section--grid header {
     grid-column: span 2;
 }
 
@@ -304,7 +315,7 @@ span.error {
     .data-input {
         padding: 1rem 0.75rem;
     }
-    .data-input__section legend {
+    .data-input__section header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -313,7 +324,7 @@ span.error {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
-    .data-input__section--grid legend{
+    .data-input__section--grid header{
         grid-column: span 3;
     }
     .data-results {
